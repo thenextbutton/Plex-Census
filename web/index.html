@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Plex Library</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico"> 
+    
+    <link rel="stylesheet" href="assets/css/style.css"> 
+</head>
+<body>
+<div id="page-wrapper">
+    <h1 id="page-header">My Plex Library</h1>
+    
+    <div id="loading-overlay">
+        <div class="loader-container">
+            <div class="loader-text">Loading Library Data...</div>
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+    
+     </div>
+    </div>
+    
+    <div class="library-grid" id="library-container">
+        </div>
+</div>
+
+<div id="sticky-footer">
+    <div id="scroll-progress-bar"></div>
+    <div id="footer-controls-container">
+        
+        <button id="search-toggle-btn" class="control-btn" data-state="search-mode">
+            <img id="toggle-icon" src="assets/images/search_icon.webp" alt="Search Icon">
+        </button>
+
+        <div class="library-selectors" id="library-selectors-container">
+            </div>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search titles...">
+        </div>
+        
+    </div>
+</div>
+
+<div id="item-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="modal-details" class="details-container">
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/script.js" defer></script> 
+</body>
+</html>
